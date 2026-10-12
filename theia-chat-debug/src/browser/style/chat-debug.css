@@ -1,0 +1,141 @@
+.chat-debug-root {
+    display: flex;
+    height: 100%;
+    min-height: 160px;
+    font-size: var(--theia-ui-font-size1);
+}
+
+.chat-debug-list {
+    width: 280px;
+    min-width: 200px;
+    border-right: 1px solid var(--theia-panel-border);
+    overflow: auto;
+}
+
+.chat-debug-detail {
+    flex: 1;
+    overflow: auto;
+    padding: 0 8px 8px;
+}
+
+.chat-debug-header {
+    font-weight: 600;
+    padding: 6px 8px;
+    position: sticky;
+    top: 0;
+    background: var(--theia-editor-background);
+    z-index: 1;
+}
+
+.chat-debug-subheader {
+    font-weight: 500;
+    padding: 4px 8px 0;
+    opacity: 0.85;
+}
+
+.chat-debug-step {
+    border-bottom: 1px solid var(--theia-panel-border);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.chat-debug-item {
+    padding: 6px 8px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--theia-panel-border);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-debug-item:hover {
+    background: var(--theia-list-hoverBackground);
+}
+
+.chat-debug-item.active {
+    background: var(--theia-list-activeSelectionBackground);
+    color: var(--theia-list-activeSelectionForeground);
+}
+
+.chat-debug-empty {
+    padding: 12px;
+    opacity: 0.7;
+}
+
+.chat-debug-pre {
+    margin: 0 0 12px;
+    padding: 8px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: var(--theia-textCodeBlock-background);
+    border-radius: 4px;
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.chat-debug-json-tree {
+    margin: 0 0 12px;
+    padding: 8px;
+    background: var(--theia-textCodeBlock-background);
+    border-radius: 4px;
+    max-height: 50vh;
+    overflow: auto;
+    font-family: var(--theia-code-font-family, monospace);
+    font-size: var(--theia-code-font-size, 12px);
+    line-height: 1.45;
+}
+
+.chat-debug-json-line {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.chat-debug-json-clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.chat-debug-json-clickable:hover {
+    background: var(--theia-list-hoverBackground);
+}
+
+.chat-debug-json-twistie {
+    display: inline-block;
+    width: 1.2em;
+    opacity: 0.75;
+}
+
+.chat-debug-json-key {
+    color: var(--theia-symbolIcon-propertyForeground, var(--theia-descriptionForeground));
+}
+
+.chat-debug-json-colon {
+    opacity: 0.7;
+}
+
+.chat-debug-json-string {
+    color: var(--theia-symbolIcon-stringForeground, var(--theia-charts-green, inherit));
+}
+
+.chat-debug-json-literal {
+    color: var(--theia-symbolIcon-numberForeground, var(--theia-charts-blue, inherit));
+}
+
+.chat-debug-json-bracket {
+    opacity: 0.8;
+}
+
+.chat-debug-json-toggle {
+    margin-left: 8px;
+    padding: 0 6px;
+    border: 1px solid var(--theia-button-border, var(--theia-panel-border));
+    border-radius: 3px;
+    background: var(--theia-button-secondaryBackground, transparent);
+    color: var(--theia-button-secondaryForeground, inherit);
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.chat-debug-json-toggle:hover {
+    background: var(--theia-button-secondaryHoverBackground, var(--theia-list-hoverBackground));
+}
